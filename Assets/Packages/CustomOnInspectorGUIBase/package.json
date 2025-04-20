@@ -1,0 +1,18 @@
+{
+    "name"       : "com.xjine.custom_on_inspector_gui_base",
+    "displayName": "Custom OnInspectorGUI Base", 
+    "version"    : "1.0.0",
+    "unity"      : "2022.3",
+    "description": "A base class for easily implementing customized Inspectors via OnInspectorGUI.",
+    "author"     :
+    {
+        "name": "XJINE",
+        "url" : "https://github.com/XJINE"
+    },
+    "keywords":
+    [
+    ],
+    "dependencies":
+    {
+    }
+}

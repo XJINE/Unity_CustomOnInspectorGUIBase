@@ -1,20 +1,7 @@
-# Unity_CustomOnInspectorGUIBase
+#if UNITY_EDITOR
+using UnityEngine;
+using UnityEditor;
 
-A base class for easily implementing customized Inspectors via OnInspectorGUI.
-
-## Importing
-
-You can use Package Manager or import it directly.
-
-```
-https://github.com/XJINE/Unity_CustomOnInspectorGUIBase.git?path=Assets/Packages/CustomOnInspectorGUIBase
-```
-
-## How to Use
-
-Override following class and implement `OnInspectorGUI` method.
-
-```csharp
 public abstract class CustomOnInspectorGUIBase<T> : Editor where T : Object
 {
     // NOTE:
@@ -51,4 +38,5 @@ public abstract class CustomOnInspectorGUIBase<T> : Editor where T : Object
     // return true if the target is updated.
     protected abstract bool OnInspectorGUI(T target);
 }
-```
+
+#endif // UNITY_EDITOR
